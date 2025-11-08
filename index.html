@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="overflow-y-scroll">
+    
+    <!-- Navigation Dots -->
+    <nav class="nav-dots">
+        <a href="#section1" class="nav-dot-item active" data-section="section1">
+            <span class="nav-dot-label">My Information</span>
+            <div class="nav-dot"></div>
+        </a>
+        <a href="#skills" class="nav-dot-item" data-section="skills">
+            <span class="nav-dot-label">Skills Sets</span>
+            <div class="nav-dot"></div>
+        </a>
+        <a href="#wordpress" class="nav-dot-item" data-section="wordpress">
+            <span class="nav-dot-label">WordPress Themes</span>
+            <div class="nav-dot"></div>
+        </a>
+        <a href="#software" class="nav-dot-item" data-section="software">
+            <span class="nav-dot-label">Software & Apps</span>
+            <div class="nav-dot"></div>
+        </a>
+    </nav>
+    
+    <!-- Section 1: My Information -->
+    <section id="section1" class="h-screen w-full flex items-center justify-center snap-start relative" style="background: linear-gradient(to bottom right, #9CEAEF, #C4FFF9);">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1920&q=80'); background-size: cover; background-position: center; opacity: 0.3;"></div>
+        <div class="text-center text-white px-8 relative z-10">
+            <h1 class="text-6xl font-bold mb-6">Hello, I'm Denmark</h1>
+            <p class="text-2xl mb-4">Web Developer & Designer</p>
+            <p class="text-lg max-w-2xl mx-auto mb-8">
+                Passionate about creating beautiful, functional websites and applications. 
+                Specializing in modern web technologies and user-centered design.
+            </p>
+            <div class="flex gap-4 justify-center">
+                <a href="mailto:your.email@example.com" class="bg-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition" style="color: #07BEB8;">
+                    Contact Me
+                </a>
+                <a href="#skills" class="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white transition" style="transition: all 0.3s;" onmouseover="this.style.color='#07BEB8'" onmouseout="this.style.color='white'">
+                    View Skills
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Skills Sets -->
+    <section id="skills" class="h-screen w-full flex items-center justify-center snap-start relative" style="background: linear-gradient(to bottom right, #9CEAEF, #C4FFF9);">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1920&q=80'); background-size: cover; background-position: center; opacity: 0.3;"></div>
+        <div class="container mx-auto px-8 relative z-10">
+            <h2 class="text-5xl font-bold text-white text-center mb-12">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-white hover:bg-white/20 transition">
+                    <h3 class="text-2xl font-bold mb-4">Frontend Development</h3>
+                    <ul class="space-y-2">
+                        <li>• HTML5 & CSS3</li>
+                        <li>• JavaScript (ES6+)</li>
+                        <li>• React / Vue / Angular</li>
+                        <li>• Tailwind CSS</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-white hover:bg-white/20 transition">
+                    <h3 class="text-2xl font-bold mb-4">Backend Development</h3>
+                    <ul class="space-y-2">
+                        <li>• PHP / Node.js</li>
+                        <li>• MySQL / MongoDB</li>
+                        <li>• REST APIs</li>
+                        <li>• WordPress Development</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-white hover:bg-white/20 transition">
+                    <h3 class="text-2xl font-bold mb-4">Design & Tools</h3>
+                    <ul class="space-y-2">
+                        <li>• UI/UX Design</li>
+                        <li>• Responsive Design</li>
+                        <li>• Git & GitHub</li>
+                        <li>• Adobe Creative Suite</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: WordPress Themes -->
+    <section id="wordpress" class="h-screen w-full flex items-center justify-center snap-start overflow-y-auto relative" style="background: linear-gradient(to bottom right, #9CEAEF, #C4FFF9);">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1920&q=80'); background-size: cover; background-position: center; opacity: 0.3;"></div>
+        <div class="container mx-auto px-8 py-12 relative z-10">
+            <h2 class="text-5xl font-bold text-white text-center mb-12">WordPress Themes I've Used</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="h-40" style="background: linear-gradient(to bottom right, #07BEB8, #3DCCC7);"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2" style="color: #07BEB8;">Astra</h3>
+                        <p class="text-gray-600">Lightweight and highly customizable theme perfect for any website type.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="h-40" style="background: linear-gradient(to bottom right, #3DCCC7, #68D8D6);"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2" style="color: #3DCCC7;">GeneratePress</h3>
+                        <p class="text-gray-600">Fast, accessible, and SEO-friendly WordPress theme.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="h-40" style="background: linear-gradient(to bottom right, #68D8D6, #9CEAEF);"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2" style="color: #68D8D6;">Divi</h3>
+                        <p class="text-gray-600">Powerful visual builder with endless design possibilities.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="h-40" style="background: linear-gradient(to bottom right, #9CEAEF, #C4FFF9);"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2" style="color: #07BEB8;">Elementor</h3>
+                        <p class="text-gray-600">Drag-and-drop page builder with professional templates.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="h-40" style="background: linear-gradient(to bottom right, #07BEB8, #68D8D6);"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2" style="color: #3DCCC7;">OceanWP</h3>
+                        <p class="text-gray-600">Multipurpose theme perfect for eCommerce and business sites.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="h-40" style="background: linear-gradient(to bottom right, #3DCCC7, #9CEAEF);"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2" style="color: #68D8D6;">Avada</h3>
+                        <p class="text-gray-600">Best-selling theme with comprehensive options and demos.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Software & Apps -->
+    <section id="software" class="h-screen w-full flex items-center justify-center snap-start overflow-y-auto relative" style="background: linear-gradient(to bottom right, #9CEAEF, #C4FFF9);">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=1920&q=80'); background-size: cover; background-position: center; opacity: 0.3;"></div>
+        <div class="container mx-auto px-8 py-12 relative z-10">
+            <h2 class="text-5xl font-bold text-white text-center mb-12">Software & Apps I Use</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-8 text-white">
+                    <h3 class="text-3xl font-bold mb-6">Development Tools</h3>
+                    <ul class="space-y-3 text-lg">
+                        <li class="flex items-center">
+                            <span class="text-2xl mr-3">💻</span>
+                            <span>Visual Studio Code</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-2xl mr-3">🌐</span>
+                            <span>Chrome DevTools</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-2xl mr-3">📦</span>
+                            <span>Git & GitHub</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-2xl mr-3">🚀</span>
+                            <span>Node.js & NPM</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-2xl mr-3">🔧</span>
+                            <span>Postman API</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-8 text-white">
+                    <h3 class="text-3xl font-bold mb-6">Design & Productivity</h3>
+                    <ul class="space-y-3 text-lg">
+                        <li class="flex items-center">
+                            <span class="text-2xl mr-3">🎨</span>
+                            <span>Figma</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-2xl mr-3">✏️</span>
+                            <span>Adobe Photoshop</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-2xl mr-3">📝</span>
+                            <span>Notion</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-2xl mr-3">💬</span>
+                            <span>Slack</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-2xl mr-3">🎯</span>
+                            <span>Trello</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-8 text-white md:col-span-2">
+                    <h3 class="text-3xl font-bold mb-6">WordPress & CMS Tools</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-lg">
+                        <div class="text-center">
+                            <span class="text-3xl mb-2 block">🔌</span>
+                            <span>Local by Flywheel</span>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-3xl mb-2 block">🛡️</span>
+                            <span>Wordfence</span>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-3xl mb-2 block">⚡</span>
+                            <span>WP Rocket</span>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-3xl mb-2 block">📊</span>
+                            <span>Yoast SEO</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
