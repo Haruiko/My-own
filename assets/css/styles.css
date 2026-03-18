@@ -65,3 +65,162 @@ section {
     opacity: 1;
     transform: translateX(0);
 }
+
+/* Mobile only: font size adjustments */
+@media (max-width: 767px) {
+    #section1 h1 {
+        font-size: 2.5rem !important;
+    }
+
+    #skills h2,
+    #wordpress h2,
+    #portfolio h2,
+    #software h2 {
+        font-size: 2rem !important;
+    }
+
+    #skills h3,
+    #wordpress h3,
+    #portfolio h3,
+    #software h3 {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* Tablet & Mobile: hide nav dots, disable snap scroll */
+@media (max-width: 1279px) {
+    .nav-dots {
+        display: none;
+    }
+
+    html {
+        scroll-snap-type: none;
+    }
+
+    section {
+        scroll-snap-align: none;
+        height: auto !important;
+        min-height: 0 !important;
+    }
+}
+
+/* Skills section – section title at 1280px */
+@media (min-width: 1280px) and (max-width: 1535px) {
+    #skills h2 {
+        font-size: 2rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    #skills .grid > div h3 {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* Portfolio section – compact layout at 1280px (Tailwind xl breakpoint) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+    #portfolio .container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #portfolio h2 {
+        font-size: 2rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    #portfolio .grid {
+        gap: 0.6rem !important;
+    }
+
+    /* Thumbnail height */
+    #portfolio .grid > a > div.h-40 {
+        height: 8rem !important;
+    }
+
+    /* Card text area */
+    #portfolio .grid > a > div.p-4 {
+        padding: 0.4rem 0.6rem !important;
+    }
+
+    #portfolio .grid > a h3 {
+        font-size: 1.2rem !important;
+        margin-bottom: 0.15rem !important;
+    }
+
+    #portfolio .grid > a p {
+        font-size: 0.7rem !important;
+    }
+}
+
+/* WordPress Themes section – compact layout at 1280px */
+@media (min-width: 1280px) and (max-width: 1535px) {
+    #wordpress .container {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #wordpress h2 {
+        font-size: 2rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    #wordpress .grid {
+        gap: 0.75rem !important;
+    }
+
+    #wordpress .grid > div > div.h-40 {
+        height: 6rem !important;
+    }
+
+    #wordpress .grid > div > div.p-6 {
+        padding: 0.5rem 0.75rem !important;
+    }
+
+    #wordpress .grid > div h3 {
+        font-size: 1.2rem !important;
+        margin-bottom: 0.2rem !important;
+    }
+
+    #wordpress .grid > div p {
+        font-size: 0.75rem !important;
+    }
+}
+
+/* Software & Apps section – compact layout at 1280px */
+@media (min-width: 1280px) and (max-width: 1535px) {
+    #software .container {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #software h2 {
+        font-size: 2rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    #software .grid {
+        gap: 0.75rem !important;
+    }
+
+    #software .grid > div {
+        padding: 0.75rem 1rem !important;
+    }
+
+    #software .grid > div h3 {
+        font-size: 1.2rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    #software .grid > div ul {
+        row-gap: 0.25rem !important;
+    }
+
+    #software .grid > div ul li {
+        font-size: 0.8rem !important;
+    }
+
+    #software .grid > div ul li span.text-2xl {
+        font-size: 1rem !important;
+        margin-right: 0.4rem !important;
+    }
+}
