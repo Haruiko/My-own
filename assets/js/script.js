@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Update active state on scroll
     const observerOptions = {
-        threshold: 0.5
+        threshold: 0,
+        rootMargin: '0px 0px -80% 0px'
     };
     
     const observer = new IntersectionObserver((entries) => {

@@ -1,10 +1,5 @@
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-
-section {
-    scroll-snap-align: start;
 }
 
 /* Navigation Dots */
@@ -17,24 +12,30 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    align-items: flex-end;
 }
 
 .nav-dot-item {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: flex-end;
     cursor: pointer;
     transition: all 0.3s ease;
+    position: relative;
 }
 
 .nav-dot-label {
+    position: absolute;
+    right: calc(100% + 1rem);
     color: white;
     font-weight: 500;
     opacity: 0;
     transform: translateX(10px);
     transition: all 0.3s ease;
     white-space: nowrap;
+    text-align: right;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
 }
 
 .nav-dot-item:hover .nav-dot-label {
@@ -93,12 +94,7 @@ section {
         display: none;
     }
 
-    html {
-        scroll-snap-type: none;
-    }
-
     section {
-        scroll-snap-align: none;
         height: auto !important;
         min-height: 0 !important;
     }
